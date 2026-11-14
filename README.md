@@ -179,8 +179,11 @@ Ask questions to collect the missing details.
 
 Customer Message:
 [Enter customer message here]
+
+
 **Input:**
 "I am Rahul. I want to book a flight from Bengaluru to Delhi."
+
 **output**
 Passenger Name: Rahul
 Departure City: Bengaluru
