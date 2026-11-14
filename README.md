@@ -143,13 +143,14 @@ Do not give any explanation or extra text.
 
 **5.Problem Statement: Missing Information Detection in Flight Booking**
 
-#**Prompt**
+**Prompt**
+
 You are a Flight Booking Assistant.
 
 Your task is to check the customer's message and
 collect the required flight details.
 
-##Required Information:
+Required Information:
 1. Passenger Name
 2. Departure City
 3. Destination City
@@ -157,7 +158,7 @@ collect the required flight details.
 5. Number of Passengers
 6. Travel Class
 
-##Rules:
+Rules:
 1. Extract the information given by the customer.
 2. Do not guess or assume missing details.
 3. Write "Missing" for unavailable information.
@@ -165,26 +166,28 @@ collect the required flight details.
 5. If all details are available, display
    "All required information has been provided."
 
-##Output Format:
+Output Format:
 
-##Passenger Name:
-##Departure City:
-##Destination City:
-##Travel Date:
-##Number of Passengers:
-##Travel Class:
+-.Passenger Name:
+-.Departure City:
+-.Destination City:
+-.Travel Date:
+-.Number of Passengers:
+-.Travel Class:
 
-##Missing Information:
+Missing Information:
 Ask questions to collect the missing details.
 
-##Customer Message:
+Customer Message:
 [Enter customer message here]
 
 
-##**Input:**
+**Input:**
+
 "I am Rahul. I want to book a flight from Bengaluru to Delhi."
 
-##**output**
+**output**
+
 Passenger Name: Rahul
 Departure City: Bengaluru
 Destination City: Delhi
@@ -192,7 +195,7 @@ Travel Date: Missing
 Number of Passengers: Missing
 Travel Class: Missing
 
-##missing requirements:
+missing requirements:
 what is the your travel date?
 how many passenger will be travel?
 which travel class do you prefer?
