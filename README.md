@@ -7,22 +7,10 @@ Prompt engineering helps AI understand customer queries and classify them into t
 
 **Prompt:**
 
-You are a customer support assistant. Read the customer's query carefully and classify it into one of the following categories:
+You are a customer support assistant. Read the customer's query carefully and classify it into one of the following categories: Delivery, Shipping, Refund, Payment, Cancellation, Defect, Return, Account, or Unknown.
 
-1. Delivery
-2. Shipping
-3. Refund
-4. Payment
-5. Cancellation
-6. Defect
-7. Return
-8. Account
-9. Unknown
-
-**Instructions:**
-- Choose the correct category.
-- Output only one category word.
-- Do not give any explanation or additional text.
+Understand the customer's problem and select the most appropriate category.If the query does not match any of the given categories, select Unknown.
+Output only one category word. Do not give any explanation or additional text.
 
 **Examples:**
 
