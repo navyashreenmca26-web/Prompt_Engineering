@@ -137,15 +137,23 @@ Customer Message: [Enter customer message here]
 **output**
 
 Passenger Name: Rahul
+
 Departure City: Bengaluru
+
 Destination City: Delhi
+
 Travel Date: Missing
+
 Number of Passengers: Missing
+
 Travel Class: Missing
 
 missing requirements:
+
 what is the your travel date?
+
 how many passenger will be travel?
+
 which travel class do you prefer?
 
 
