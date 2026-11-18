@@ -89,6 +89,7 @@ You are a priority checker. Read the customer message and decide how urgent the 
 1. High
 2. Medium
 3. Low
+
 High means the problem is very serious and needs immediate attention.Medium means the problem needs attention but is not very urgent.Low means the problem is minor and can be solved later.Understand the customer's problem and select the correct priority level.Output only one category word without any explanation or additional text.
 
 **Examples:**
