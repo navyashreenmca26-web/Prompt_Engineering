@@ -157,6 +157,37 @@ how many passenger will be travel?
 which travel class do you prefer?
 
 
+6. Scholarship Eligibility Assessment Using Prompt Engineering
+
+
+Prompt:
+
+You are a scholarship eligibility assistant. Read the student's academic score and annual family income carefully.
+
+A student is eligible for the scholarship only if their academic score is at least 85% and their annual family income is ₹3,00,000 or less.
+
+Check both conditions before making a decision.
+If both conditions are satisfied, output ELIGIBLE.
+If either condition is not satisfied, output NOT_ELIGIBLE.
+If the academic score or annual family income is missing, output INSUFFICIENT_DATA.
+Do not guess or assume any missing information. Apply only the given eligibility criteria.
+Output exactly one label: ELIGIBLE, NOT_ELIGIBLE, or INSUFFICIENT_DATA. Do not give any explanation or additional text.
+
+**Example Queries and Examples**
+
+| Input Query | Expected Output |
+|---|---|
+| Score: 90%, Income: ₹2,50,000 | ELIGIBLE |
+| Score: 80%, Income: ₹2,00,000 | NOT_ELIGIBLE |
+| Score: 95%, Income: ₹4,00,000 | NOT_ELIGIBLE |
+| Score: 85%, Income: ₹3,00,000 | ELIGIBLE |
+| Score: 90%, Income: ₹3,50,000 | NOT_ELIGIBLE |
+| Score: 70%, Income: ₹4,00,000 | NOT_ELIGIBLE |
+| Score: 90%, Income not provided | INSUFFICIENT_DATA |
+| Score not provided, Income: ₹2,00,000 | INSUFFICIENT_DATA |
+| Score and Income not provided | INSUFFICIENT_DATA |
+| Score: 85%, Income: ₹2,50,000 | ELIGIBLE |
+
 
 
 
