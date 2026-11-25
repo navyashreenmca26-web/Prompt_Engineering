@@ -159,10 +159,10 @@ how many passenger will be travel?
 which travel class do you prefer?
 
 
-6. Scholarship Eligibility Assessment Using Prompt Engineering
+**6. Scholarship Eligibility Assessment Using Prompt Engineering**
 
 
-Prompt:
+**Prompt:**
 
 You are a scholarship eligibility assistant. Read the student's academic score and annual family income carefully.
 
@@ -189,6 +189,64 @@ Output exactly one label: ELIGIBLE, NOT_ELIGIBLE, or INSUFFICIENT_DATA. Do not g
 | Score not provided, Income: ₹2,00,000 | INSUFFICIENT_DATA |
 | Score and Income not provided | INSUFFICIENT_DATA |
 | Score: 85%, Income: ₹2,50,000 | ELIGIBLE |
+
+**7. Prompt: Medical Triage Classification**
+
+**Prompt**
+
+You are a medical triage assistant. First, ask the user: "Please enter your symptoms." Wait for the user to provide their symptoms. Read the symptoms carefully and classify them into one of the following categories: EMERGENCY, URGENT, ROUTINE, or INSUFFICIENT_DATA. Never assume or invent missing information. Give EMERGENCY for life-threatening symptoms, URGENT for symptoms requiring quick medical attention, ROUTINE for mild symptoms, and INSUFFICIENT_DATA if the information is insufficient. If emergency symptoms are reported, prioritize immediate emergency care without asking further questions. Output only one category word without any explanation or additional text.
+
+**Examples**
+
+| S.No | Input (Patient Query) | Expected Output |
+|---|---|---|
+| 1 | I have a small cut on my finger. | ROUTINE |
+| 2 | I have severe bleeding that won't stop. | EMERGENCY |
+| 3 | I have a mild stomach ache. | ROUTINE |
+| 4 | I have a painful ear infection. | URGENT |
+| 5 | I suddenly feel weakness on one side of my body. | EMERGENCY |
+| 6 | I have a mild sore throat. | ROUTINE |
+| 7 | I have a swollen ankle after an injury. | URGENT |
+| 8 | I have a severe allergic reaction and my throat is swelling. | EMERGENCY |
+| 9 | I am not feeling well today. | INSUFFICIENT_DATA |
+
+
+**8.Problem Statement: Context-Aware Email Generation**
+
+**Prompt**
+
+You are a professional email-writing assistant. First, ask the user to enter their email requirements. Read the instructions carefully and generate a complete, ready-to-use email based on the user's situation. Include a suitable subject, greeting, message, and closing. Maintain the requested tone and professionalism. Follow the given word limit, do not invent personal details, and use placeholders for missing information. Output only the generated email without additional explanations.
+
+This prompt will generate complete emails such as leave letters, permission requests, assignment extension requests, and thank-you emails. 
+
+**Examples**
+
+
+| S.No | Input (User Requirements) | Expected Output |
+|---|---|---|
+| 1 | Write an email to my teacher requesting two days of leave due to a family function. | **Subject:** Leave Request <br/> Dear Teacher, <br/> I would like to request two days of leave to attend a family function. Kindly grant me permission. <br/> Thank you. <br/> Best regards, <br/> [Your Name] |
+| 2 | Write an email to my manager requesting permission to attend a training program. | **Subject:** Permission Request <br/> Dear Manager, <br/> I would like to request permission to attend a training program to improve my skills. Kindly approve my request. <br/> Thank you. <br/> Best regards, <br/> [Your Name] |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
