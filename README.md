@@ -1,3 +1,4 @@
+
 # Prompt_Engineering
 **1. Customer Query Classification Using Prompt Engineering**
 
@@ -228,14 +229,44 @@ This prompt will generate complete emails such as leave letters, permission requ
 | 2 | Write an email to my manager requesting permission to attend a training program. | **Subject:** Permission Request <br/> Dear Manager, <br/> I would like to request permission to attend a training program to improve my skills. Kindly approve my request. <br/> Thank you. <br/> Best regards, <br/> [Your Name] |
 
 
+**9.Problem Statement: Intelligent Meeting Scheduler**
+
+**Prompt**
+
+You are an intelligent meeting scheduling assistant. First, ask the user to enter the available time slots, meeting duration, and scheduling constraints. Read all the details carefully and select a suitable meeting slot. Choose only from the provided time slots. Make sure all participants are available and all scheduling conditions are satisfied. Never assume or invent availability information. If no suitable slot exists, output NO_AVAILABLE_SLOT. Output only the selected time slot or NO_AVAILABLE_SLOT without any explanation.
+
+**Examples**
 
 
+| S.No | Input (Meeting Requirements) | Expected Output |
+|---|---|---|
+| 1 | Available: 9 AM–10 AM, 11 AM–12 PM. Duration: 1 hour. Manager unavailable: 9 AM–10 AM. | 11:00 AM – 12:00 PM |
+| 2 | Available: 10 AM–11 AM, 2 PM–3 PM. Duration: 1 hour. Manager unavailable: 10 AM–3 PM. | NO_AVAILABLE_SLOT |
+| 3 | Available: 9 AM–10 AM, 1 PM–2 PM. Duration: 1 hour. Manager unavailable: 9 AM–10 AM. | 1:00 PM – 2:00 PM |
+| 4 | Available: 11 AM–12 PM, 2 PM–3 PM. Duration: 2 hours. | NO_AVAILABLE_SLOT |
+| 5 | Available: 10 AM–11 AM, 3 PM–4 PM. Duration: 1 hour. Manager unavailable: 10 AM–11 AM. | 3:00 PM – 4:00 PM |
 
 
+**10.Problem Statement: AI-Powered Resume Bullet Point Generator**
 
+**Prompt**
 
+You are a professional resume-writing assistant. First, ask the user to enter their project, internship, or achievement details, including measurable results. Convert the information into professional, ATS-friendly resume bullet points using the What → How → Measurable Impact → Outcome structure. Use strong action verbs and relevant technical terminology. Include numerical values such as the number of records processed, percentage of time saved, accuracy improvement, and number of users served whenever available. If these details are not provided, ask the user for them or use placeholders instead of inventing numbers or percentages. Keep the output concise and professional. Generate a maximum of two bullet points and ensure every claim is supported by the user's input.
 
+**Examples**
+1.Online Shopping Website
 
+Input
+
+I developed an online shopping website using HTML, CSS,
+JavaScript, and Bootstrap. It includes product listings,
+shopping cart, and user login features. It serves 500+ users.
+
+output
+
+Developed a responsive online shopping website using HTML,
+CSS, JavaScript, and Bootstrap, implementing product listings,
+shopping cart, and user login features for 500+ users.
 
 
 
